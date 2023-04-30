@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\tharu\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add gh-pages --dev
+
+PATH: 
+  C:\Users\tharu\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\tharu\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Redis;C:\Program Files\MongoDB\Server\6.0\bin;C:\mongosh\mongosh-1.7.1-win32-x64\bin;C:\Users\tharu\AppData\Local\Microsoft\WindowsApps;C:\Users\tharu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\tharu\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\work\own\resume\tharun_edited\react_portfolio_tharun\node_modules\esbuild-windows-64\esbuild.exe'
+
+npm manifest: 
+  {
+    "name": "react_portfolio",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite --host",
+      "build": "vite build",
+      "preview": "vite preview",
+      "predeploy": "rm -rf docs && mkdir docs",
+      "deploy": "cp -r dist/* docs",
+      "homepage": "https://tharunpeter369.github.io/portfolio_live_vite"
+    },
+    "dependencies": {
+      "@emailjs/browser": "^3.9.1",
+      "aos": "^2.3.4",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-hot-toast": "^2.4.0",
+      "react-icons": "^4.6.0",
+      "react-modal": "^3.16.1",
+      "swiper": "^8.4.4"
+    },
+    "devDependencies": {
+      "@types/react": "^18.0.24",
+      "@types/react-dom": "^18.0.8",
+      "@vitejs/plugin-react": "^2.2.0",
+      "autoprefixer": "^10.4.13",
+      "gh-pages": "^5.0.0",
+      "postcss": "^8.4.18",
+      "tailwindcss": "^3.2.3",
+      "vite": "^3.2.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
