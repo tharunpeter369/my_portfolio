@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "rm -rf docs && mkdir docs",
-    "deploy": "cp -r dist/* docs",
+    "deploy": "npm run build && gh-pages -d dist",
     "homepage": "https://tharunpeter369.github.io/portfolio_live_vite"
   },
   "dependencies": {
