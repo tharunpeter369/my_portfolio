@@ -1,35 +1,73 @@
 import { createElement, useRef } from "react";
 import { content } from "../Content";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import toast, { Toaster } from "react-hot-toast";
+
+const publicKey = import.meta.env.VITE_PK;
+const service_key = import.meta.env.VITE_SK;
+const Template_key = import.meta.env.VITE_TK;
+
+// console.log(publicKey, service_key, Template_key, "😇", apiKey);
 
 const Contact = ({ targetRef }) => {
   const { Contact } = content;
   const form = useRef();
 
   // Sending Email
+  // const sendEmail = (e) => {
+  //   console.log(form.current);
+  //   e.preventDefault();
+  //   emailjs
+  //     .sendForm(
+  //       "YOUR_SERVICE_ID",
+  //       "YOUR_TEMPLATE_ID",
+  //       form.current,
+  //       "YOUR_PUBLIC_KEY"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         // Clear all input field values
+  //         form.current.reset();
+  //         // Success toast message
+  //         toast.success("Email sent successfully");
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //         // Error toast message
+  //         toast.error("Oops, something went wrong. Please try again later.");
+  //       }
+  //     );
+  // };
+
+
+
+
   const sendEmail = (e) => {
-    console.log(e, "sssssssssssssssssssssssssssssssssssssssssssssssssss");
     e.preventDefault();
+    const { from_name, user_email, message } = e.target.elements;
+    const data = {
+      from_name: from_name.value,
+      user_email: user_email.value,
+      message: message.value,
+    };
+
+    console.log(data, "😊");
+
     emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
-      )
+      // .send(VITE_SK, VITE_TK, data, VITE_PK)
+      .send(service_key, Template_key, data, publicKey)
       .then(
         (result) => {
           console.log(result.text);
           // Clear all input field values
-          form.current.reset();
+          e.target.reset();
           // Success toast message
           toast.success("Email send Successfully");
         },
         (error) => {
-          toast.success("Email send Successfully");
-          setTimeout(() => {
-            window.location.reload(true)
-          },1000)
-          // console.log(error.text);
-          // toast.error(error.text);
+          console.log(error.text);
+          toast.error(error.text);
         }
       );
   };
@@ -75,6 +113,7 @@ const Contact = ({ targetRef }) => {
               required
             ></textarea>
             <button
+              type="submit"
               className="btn self-start
             bg-white text-dark_primary"
             >
