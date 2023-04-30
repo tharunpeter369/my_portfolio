@@ -7,10 +7,6 @@ const publicKey = import.meta.env.VITE_PK;
 const service_key = import.meta.env.VITE_SK;
 const Template_key = import.meta.env.VITE_TK;
 
-const VITE_PK = uSeCfXHIDPEN40Fua
-const VITE_SK = service_63sxevh
-const VITE_TK = template_ef2g9a4
-
 // console.log(publicKey, service_key, Template_key, "😇", apiKey);
 
 const Contact = ({ targetRef }) => {
@@ -59,8 +55,9 @@ const Contact = ({ targetRef }) => {
     console.log(data, "😊");
 
     emailjs
-      .send(VITE_SK, VITE_TK, data, VITE_PK)
-      // .send(service_key, Template_key, data, publicKey)
+      // .send(VITE_SK, VITE_TK, data, VITE_PK)
+      .send(service_key, Template_key, data, publicKey)
+
       .then(
         (result) => {
           console.log(result.text);
