@@ -7,9 +7,9 @@ const publicKey = import.meta.env.VITE_PK;
 const service_key = import.meta.env.VITE_SK;
 const Template_key = import.meta.env.VITE_TK;
 
-const VITE_PK = uSeCfXHIDPEN40Fua
-const VITE_SK = service_63sxevh
-const VITE_TK = template_ef2g9a4
+const VITE_PK = "uSeCfXHIDPEN40Fua"
+const VITE_SK = "service_63sxevh"
+const VITE_TK = "template_ef2g9a4"
 
 // console.log(publicKey, service_key, Template_key, "😇", apiKey);
 
