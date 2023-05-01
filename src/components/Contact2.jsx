@@ -7,8 +7,6 @@ const publicKey = import.meta.env.VITE_PK;
 const service_key = import.meta.env.VITE_SK;
 const Template_key = import.meta.env.VITE_TK;
 
-// console.log(publicKey, service_key, Template_key, "😇", apiKey);
-
 const Contact = ({ targetRef }) => {
   const { Contact } = content;
   const form = useRef();
@@ -51,8 +49,6 @@ const Contact = ({ targetRef }) => {
       user_email: user_email.value,
       message: message.value,
     };
-
-    console.log(data, "😊");
 
     emailjs
       // .send(VITE_SK, VITE_TK, data, VITE_PK)

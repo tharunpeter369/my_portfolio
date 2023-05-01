@@ -33,8 +33,8 @@ import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
-import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
+import { MdArrowForward, MdCall,MdDialpad } from "react-icons/md";
+import { BsInstagram ,BsLinkedin} from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
@@ -86,23 +86,23 @@ export const content = {
     skills_content: [
       {
         name: "Node js",
-        para: "Lorem ipsum text  dummy",
+        // para: "Build scalable and high-performance applications in back-end",
         logo: nodejs,
       },
       {
         name: "React js",
-        para: "Lorem ipsum text  dummy",
+        // para: "JavaScript library for building responsive, scalable, and interactive user interfaces",
         logo: reactjs,
       },
       {
         name: "Figma",
-        para: "Lorem ipsum text  dummy",
+        // para: "Lorem ipsum text  dummy",
         logo: figma,
       },
 
       {
         name: "Javascript",
-        para: "Lorem ipsum text  dummy",
+        // para: "Lorem ipsum text  dummy",
         logo: jslogo,
       },
 
@@ -164,7 +164,7 @@ export const content = {
         image: project3,
       },
       {
-        title: "DashBoard Website",
+        title: "Dashboard Website",
         image: project4,
       },
       {
@@ -226,9 +226,14 @@ export const content = {
         link: "https://wa.me/9544335325",
       },
       {
-        text: "tharunpeter",
+        text: "tharun_peter",
         icon: BsInstagram,
         link: "https://www.instagram.com/tharunpeter/?hl=en",
+      },
+      {
+        text: "Tharun_Peter",
+        icon: BsLinkedin,
+        link: "https://www.linkedin.com/in/tharun-peter-743884181/",
       },
     ],
   },
