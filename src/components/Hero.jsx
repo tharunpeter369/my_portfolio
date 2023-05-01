@@ -5,7 +5,7 @@ const Hero = ({targetRef}) => {
   const { hero } = content;
 
   return (
-    <section onClick={() => targetRef.current.scrollIntoView({ behavior: 'smooth' })} id="home" className="overflow-hidden">
+    <section id="home" className="overflow-hidden">
       <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
         <div
           data-aos="slide-left"
@@ -23,7 +23,7 @@ const Hero = ({targetRef}) => {
           <h2>{hero.title}</h2>
           <br />
           <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
+            <button  onClick={() => targetRef.current.scrollIntoView({ behavior: 'smooth' })} className="btn">{hero.btnText}</button>
           </div>
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (
