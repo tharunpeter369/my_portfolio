@@ -72,7 +72,7 @@ export const content = {
     hero_content: [
       {
         count: "2+",
-        text: "Years of Experinse in Web development",
+        text: "Years of Experience in Web development",
       },
       {
         count: "5+",
@@ -212,7 +212,7 @@ export const content = {
     btnText: "Contact Me",
   },
   Contact: {
-    title: "Contect Me",
+    title: "Contact Me",
     subtitle: "GET IN TOUCH",
     social_media: [
       {
