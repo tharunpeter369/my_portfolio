@@ -207,7 +207,7 @@ export const content = {
     title: "Hire Me",
     subtitle: "FOR YOUR PROJECTS",
     image1: Hireme_person,
-    image2: Hireme_person2,
+    image2: Hireme_person,
     para: "I am passionate about learning new technologies and programming languages, and I have a track record of staying up-to-date with the latest advancements in the industry. I am also highly collaborative and thrive in team-based environments, where I am able to effectively communicate and work alongside fellow developers and designers.",
     btnText: "Contact Me",
   },
