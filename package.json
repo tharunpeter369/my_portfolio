@@ -7,7 +7,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "rm -rf docs && mkdir docs",
+    "predeploy": "rmdir /s /q docs && mkdir docs",
     "deploy": "npm run build && gh-pages -d dist",
     "homepage": "https://tharunpeter369.github.io/my_portfolio"
   },
